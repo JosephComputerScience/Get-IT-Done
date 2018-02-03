@@ -1,0 +1,7 @@
+#Sat Feb 03 14:30:48 EST 2018
+base.0=D\:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_68fea98dfe966613e0c48f35c9221201569ebfcc
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d50d5ca40b4b304a4344692ff1601910b9e98c23\\classes.dex
+base.1=D\:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d50d5ca40b4b304a4344692ff1601910b9e98c23
+file.0=D\:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_68fea98dfe966613e0c48f35c9221201569ebfcc\\classes.dex

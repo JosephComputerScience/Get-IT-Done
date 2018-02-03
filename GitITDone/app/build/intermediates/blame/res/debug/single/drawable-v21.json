@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\jnguy\\.android\\build-cache\\e1dd3f15484c0db5c25a1ec3adb95e339e700666\\output\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\jnguy\\.android\\build-cache\\e1dd3f15484c0db5c25a1ec3adb95e339e700666\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\jnguy\\.android\\build-cache\\69297e7834c44bbd122dae60f539ba414b9e1b63\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\jnguy\\.android\\build-cache\\69297e7834c44bbd122dae60f539ba414b9e1b63\\output\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\jnguy\\.android\\build-cache\\e1dd3f15484c0db5c25a1ec3adb95e339e700666\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\jnguy\\.android\\build-cache\\e1dd3f15484c0db5c25a1ec3adb95e339e700666\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\jnguy\\.android\\build-cache\\69297e7834c44bbd122dae60f539ba414b9e1b63\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\jnguy\\.android\\build-cache\\69297e7834c44bbd122dae60f539ba414b9e1b63\\output\\res\\drawable-v21\\avd_show_password.xml"
+    }
+]

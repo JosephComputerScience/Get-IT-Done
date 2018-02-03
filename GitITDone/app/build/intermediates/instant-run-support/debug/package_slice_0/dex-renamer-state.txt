@@ -1,0 +1,4 @@
+#Sat Feb 03 13:09:40 EST 2018
+base.0=D\:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0
+renamed.0=classes.dex
+file.0=D\:\\Documents\\Github\\Get-IT-Done\\GitITDone\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0\\classes.dex
