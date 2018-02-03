@@ -7,17 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="joseph.gititdone.MainActivity">
-
-    <!--<org.jraf.android.backport.switchwidget.Switch-->
-        <!--android:id="@+id/th"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:thumb="@drawable/apptheme_switch_inner_holo_light"-->
-        <!--app:track="@drawable/apptheme_switch_track_holo_light"-->
-        <!--app:textOn="@string/switch_yes"-->
-        <!--app:textOff="@string/switch_no"-->
-        <!--android:textColor="#000000"-->
-        <!--/>-->
+    
     <RadioGroup
         android:checkedButton="@+id/offer"
         android:id="@+id/toggle"
