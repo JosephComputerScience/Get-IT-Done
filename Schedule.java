@@ -102,9 +102,9 @@ public class Schedule {
             //Insert task by order of time.
             while(!insert && index < taskList.size())
             {
-                System.out.println("Inside while loop.");
+                //System.out.println("Inside while loop.");
                 
-                if(task.getTime().compareTo(taskList.get(index).getTime()) < 0)
+                if(task.getTime().compareTo(taskList.get(index).getTime()) <= 0)
                 {
                     taskList.add(index, task);
                     insert = true;
