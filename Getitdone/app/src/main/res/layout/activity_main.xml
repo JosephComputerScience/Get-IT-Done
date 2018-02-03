@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tariq.getitdone.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/getpicpng"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteY="76dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="center"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/edittextit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the IT" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:checkedButton="@+id/offer"
+        android:id="@+id/toggle"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_margin="65dp"
+        android:background="@drawable/pink_out_line"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioBy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="By"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioIn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="In"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/edittexttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the time" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+</LinearLayout>
