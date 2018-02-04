@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         radType = 0;
         // timeOption at 0 is AM/HR, at 1 is PM/MIN
         timeOption = 0;
+        timeButton = (ToggleButton) findViewById(R.id.timeButton);
+        timeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setTimeOption();
+            }
+        });
     }
     public void setTimeOption(){
         if (timeOption == 0){
@@ -51,14 +58,15 @@ public class MainActivity extends AppCompatActivity {
         taskString = task.getText().toString();
         time = (EditText) findViewById(R.id.timeInput);
         timeString = time.getText().toString();
-
-        if(radType == 0)
-        {   //GET AM/PM FROM BUTTON
-            timeOption =
-        } else if(radType == 1)
-        {
-
-        }
+        Toast.makeText(getBaseContext(), task.getText(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(getBaseContext(), time.getText(), Toast.LENGTH_LONG).show();
+//        if(radType == 0)
+//        {   //GET AM/PM FROM BUTTON
+//            //timeOption =
+//        } else if(radType == 1)
+//        {
+//
+//        }
 
 
 
@@ -72,54 +80,54 @@ public class MainActivity extends AppCompatActivity {
         } else
             return 1;
     }
-    public boolean checkFormat(String timeString, int inType){
-        if(radType == 0){
-            switch(timeString.length())
-            {
-                case 0:
-                    return false;
-                break;
-                case 1:
-                    if(!timeString.charAt(0).isNumeric())
-                        return false;
-                    break;
-                case 2:
-                    try {
-                        int temp = Integer.parseInt(timeString);
-                        if(temp > 13)
-                            return false;
-                    }
-                    catch(NumberFormatException ex)
-                    {
-                        return false;
-                    }
-                    break;
-                case 3:
-                    return false;
-                break;
-                case 4:
-                    if(timeString.charAt(1) != ':')
-                        return false;
-                    break;
-                case 5:
-                    if(timeString.charAt(2) != ':')
-                        return false;
-                    break;
-            }
-
-        }
-        else {
-            try{
-                int temp = Integer.parseInt(timeString);
-                if()
-            }
-            catch (NumberFormatException ex)
-            {
-                return false;
-            }
-        }
-
-    }
+//    public boolean checkFormat(String timeString, int inType){
+//        if(radType == 0){
+//            switch(timeString.length())
+//            {
+//                case 0:
+//                    return false;
+//                break;
+//                case 1:
+//                    if(!timeString.charAt(0).isNumeric())
+//                        return false;
+//                    break;
+//                case 2:
+//                    try {
+//                        int temp = Integer.parseInt(timeString);
+//                        if(temp > 13)
+//                            return false;
+//                    }
+//                    catch(NumberFormatException ex)
+//                    {
+//                        return false;
+//                    }
+//                    break;
+//                case 3:
+//                    return false;
+//                break;
+//                case 4:
+//                    if(timeString.charAt(1) != ':')
+//                        return false;
+//                    break;
+//                case 5:
+//                    if(timeString.charAt(2) != ':')
+//                        return false;
+//                    break;
+//            }
+//
+//        }
+//        else {
+//            try{
+//                int temp = Integer.parseInt(timeString);
+//                if()
+//            }
+//            catch (NumberFormatException ex)
+//            {
+//                return false;
+//            }
+//        }
+//
+//    }
 
     public void onRadioButtonClicked(View view) {
 
@@ -135,16 +143,20 @@ public class MainActivity extends AppCompatActivity {
         // Need to fix logic to make button toggle once to get correct button text
         switch(view.getId()) {
             case R.id.radioBy:
-                if (checked)
+                if (checked) {
+                    timeButton.setText("AM");
                     text_input_layout.setHint("Hour:Minute");
-                timeButton.setTextOn("AM");
-                timeButton.setTextOff("PM");
+                    timeButton.setTextOn("AM");
+                    timeButton.setTextOff("PM");
+                }
                 break;
             case R.id.radioIn:
                 if (checked)
+                {
+                    timeButton.setText("HR");
                     text_input_layout.setHint("Hours");
                 timeButton.setTextOn("HR");
-                timeButton.setTextOff("MIN");
+                timeButton.setTextOff("MIN");}
                 break;
         }
     }

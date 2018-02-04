@@ -33,7 +33,8 @@
             android:id="@+id/taskInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter the IT" />
+            android:hint="Enter the IT"
+            android:inputType="text"/>
 
 
     </android.support.design.widget.TextInputLayout>
@@ -117,7 +118,8 @@
                 android:id="@+id/timeInput"
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
-                android:hint="Enter the time" />
+                android:hint="Enter the time"
+                android:inputType="text"/>
 
 
         </android.support.design.widget.TextInputLayout>
