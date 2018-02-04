@@ -110,6 +110,7 @@
             android:id="@+id/text_input_layout"
             android:layout_width="269dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
             android:layout_gravity="center">
 
             <EditText
@@ -141,10 +142,12 @@
         android:text="Done" />
 
     <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
+        android:id="@+id/bottom_nav_items"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
+        android:layout_alignParentBottom="true"
+
         app:menu="@menu/bottom_nav_items" />
 
 
