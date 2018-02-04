@@ -6,6 +6,11 @@
         android:icon="@drawable/settingsicon"
         />
     <item
+        android:id="@+id/homeicon"
+        android:title="homeicon"
+        android:icon="@drawable/homeicon"
+        />
+    <item
         android:id="@+id/menu_schedule"
         android:title="menu_search"
         android:icon="@drawable/scheduleicon"

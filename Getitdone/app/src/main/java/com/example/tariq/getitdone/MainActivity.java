@@ -1,8 +1,14 @@
 package com.example.tariq.getitdone;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -10,6 +16,8 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 import android.support.design.widget.TextInputLayout;
+
+import java.time.LocalTime;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,12 +32,52 @@ public class MainActivity extends AppCompatActivity {
     int radType;
     int timeOption;
 
+    BottomNavigationView bottomNavigationView;
+
     TextInputLayout text_input_layout;
     ToggleButton timeButton;
+
+Button done;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(null,"test");
+
+//        done = (Button)findViewById(R.id.done);
+//
+//        done.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                Intent toy = new Intent(MainActivity.this, schedulepage.class);
+//                startActivity(toy);
+//            }
+//        });
+
+//        bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottom_nav_items);
+//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                if(item.getItemId() == R.id.menu_home){
+//                    Intent toy = new Intent(MainActivity.this, schedulepage.class);
+//                    startActivity(toy);
+//                }
+//
+//                if(item.getItemId() == R.id.homeicon){
+//                    Intent toy = new Intent(MainActivity.this, MainActivity.class);
+//                    startActivity(toy);
+//                }
+//
+//                if(item.getItemId() == R.id.menu_home){
+//                    Intent toy = new Intent(MainActivity.this, schedulepage.class);
+//                    startActivity(toy);
+//                }
+//
+//                    return false;
+//            }
+//        });
 
         radGroup = (RadioGroup) findViewById(R.id.toggle);
         radType = 0;
@@ -60,6 +108,29 @@ public class MainActivity extends AppCompatActivity {
         timeString = time.getText().toString();
         Toast.makeText(getBaseContext(), task.getText(), Toast.LENGTH_SHORT).show();
         Toast.makeText(getBaseContext(), time.getText(), Toast.LENGTH_LONG).show();
+
+                done = (Button)findViewById(R.id.done);
+
+
+
+        done.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent toy = new Intent(MainActivity.this, schedulepage.class);
+
+//Create the bundle
+                Bundle bundle = new Bundle();
+                task.getText();
+
+//Add your data to bundle
+                Object stuff;
+                bundle.putString("stuff", task.getText().toString());
+                toy.putExtras(bundle);
+
+//Add the bundle to the intent
+                startActivity(toy);
+            }
+        });
 //        if(radType == 0)
 //        {   //GET AM/PM FROM BUTTON
 //            //timeOption =
